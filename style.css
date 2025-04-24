@@ -1,0 +1,192 @@
+:root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darker-color: #003251;
+    --secondary-color: #fff700;
+    --white: rgb(255, 242, 242);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,
+body{
+    font-size: 62.5%;
+}
+main{
+    background-color: #003d62;
+}
+nav{
+    background-color:#0089b7;
+    width: 100%;
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    font-size: 1.5rem;
+}
+.logo{
+    font-size: 1.7rem;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.menu h2{
+    border-bottom: 4px solid transparent;
+}
+.menu h2:hover{
+    border-bottom: 4px solid #fff700;
+    cursor: pointer;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--white);
+}
+.hero_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.hero_img img{
+    position: relative;
+    top: 65px;
+    left: 50px;
+}
+.titles{
+    justify-content: center;
+    color: azure;
+    font-weight: 2rem;
+}
+.lt{
+    font-size: 4.5rem;
+}
+.highlighted_text{
+    color: #fff700;
+}
+.st{
+    font-size: 3rem;
+    margin-right: 5px;
+}
+.lower_text h1{
+    max-width: 370px;
+    font-size: 4rem;
+    overflow: hidden;
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.divider{
+    width: 100%;
+    height: 4px;
+    background-color:#0089b7;
+}
+.project_section{
+    background-color: #003251;
+}
+.project_section h1{
+    font-size: 8.5rem;
+    letter-spacing: .3rem;
+    color: var(--white);
+    text-align: center;
+}
+.grid_items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    align-items: center;
+    gap: 30px;
+    border: 1px transparent;
+    padding: 10px;
+}
+.project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid_items a{
+    text-decoration: none;
+    color: var(--darker-color);
+}
+.project{
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.project:hover{
+    transform: scale(1.03);
+}
+.project:hover img{
+    opacity: .8;
+}
+.subtitles:hover {
+    background: white;
+    color: var(--dark-color);
+    transform: translateY(0px);
+}
+.subtitles{
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 20px;
+    color: #003251;
+    transition: .6s ease;
+}
+.lower_section{
+    width: 550px;
+    margin: 50px auto;
+    color: var(--white);
+    font-weight: 3rem;
+    display: grid;
+    place-items: center;
+}
+.lower_section h1{
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.media_links{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    font-size: 3rem;
+}
+.first_line{
+    display: flex;
+    gap: 40px;
+}
+footer{
+    background-color: #003251;
+    text-align: center;
+    padding: 10px;
+    color: var(--white);
+    font-size: 2rem;
+}
+

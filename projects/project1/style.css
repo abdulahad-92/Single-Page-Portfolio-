@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    background-image: linear-gradient(white,azure,white, lightblue) ;
+}
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.top_section{
+    margin-top: 80px;
+    display: flex;
+}
+.title{
+    margin: 80px 80px;
+}
+.title h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;   
+}
+.title h4{
+    text-align: end;
+}
+.title p{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.2em;
+}
+.image_section img{
+    width: 320px;
+    height: 300px;
+    border-radius: 50%;
+}
+.biography{
+    margin: 20px 20px 0px 20px;
+}
+.biography h2{
+    margin: 15px 0px;
+    font-size: 2em;
+    display: inline-block;
+    border-bottom: 5px solid dodgerblue;
+    border-radius: 5px;
+}
+.biography p{
+    line-height: 25px;
+    text-align: justify;
+    margin: 10px 20px 0px 60px;
+    padding-bottom: 50px;
+
+}
+.biography img{
+    width: 140px;
+    float: left;
+    border: 2px solid azure;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+p.readmore{
+    text-align: end;
+}
+a {
+color: dodgerblue;
+}
+footer{
+    height: 80px;
+}
+footer h2{
+    text-align: center;
+}

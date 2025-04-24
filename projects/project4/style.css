@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.main_section{
+    background-image: url(images/developer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.title{
+    color: azure;
+    font-weight: 600;
+    font-size: 42px;
+    margin-left: 320px;
+}
+.title h4{
+    font-size: 35px;
+}
+.block1{
+    text-align: center;
+    background-color: #000;
+    width: 100%;
+    padding: 5px 0px;
+}
+.text_block{
+    color: azure;
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-transform: uppercase;    
+}
+.text_block span{
+    font-size: 85px;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 30px;
+    margin: 35px 10px;
+    justify-content: space-around;
+}
+.card_one, .card_two, .card_three{
+    max-width: 321px;
+    height: 350px;
+    margin: 20px auto;
+    border: 1px solid azure;
+    border-radius: 9px;
+    box-shadow: 4px 4px 10px rgb(122, 122, 122);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: .3s ease-in-out;
+}
+.inside_card{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 10px;
+    text-align: justify;
+    font-size: .99em;
+    line-height: 1.2em;
+}
+.ct{
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+}
+.cards:hover{
+    transform: scale(1.03);
+}
+.lower_section{
+    display: flex;
+    margin-left: 20px;
+    margin: 10px 0 20px 10;
+    padding: 20px;
+}
+.contact{
+    background-color: seagreen;
+    padding: 30px;
+    text-align: justify;
+}
+.about{
+    background-color: skyblue;
+    padding: 30px;
+    text-align: justify;
+}
+h2.heading{
+    padding-bottom: 10px;
+    font-size: 1.6em;
+    color: azure;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px;
+    font-size: 1.3em;
+    color: aliceblue;
+}
+@media screen and (max-width: 768px){
+    .main_section{
+        min-height: 50vh;
+    }
+    .title{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .title h4{
+        font-size: 23px;
+    }
+    .text_block{
+        font-size: 30px;
+    }
+    .text_block span{
+        font-size: 55px;
+    }
+}
+@media screen and (min-width:200px) and (max-width: 546px) {
+    .text_block{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .text_block span{
+        font-size: 30px;
+    }
+    .lower_section{
+        flex-wrap: wrap;
+    }
+}
